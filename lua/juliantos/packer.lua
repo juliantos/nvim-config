@@ -59,4 +59,6 @@ return require('packer').startup(function(use)
   use('preservim/nerdcommenter')
 
   use('ziglang/zig.vim')
+
+  use('mattn/webapi-vim')
 end)
