@@ -14,7 +14,6 @@ require('mason-lspconfig').setup({
 		'dockerls',
 		'gopls',
 		'jsonls',
-		'autotools_ls',
 		'jedi_language_server'},
 	handlers = {
 		function(server_name)
