@@ -24,7 +24,7 @@ return require('packer').startup(function(use)
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 
   use('nvim-treesitter/playground')
- 
+
   use('theprimeagen/harpoon')
 
   use('mbbill/undotree')
@@ -61,4 +61,13 @@ return require('packer').startup(function(use)
   use('ziglang/zig.vim')
 
   use('mattn/webapi-vim')
+
+  use('kevinhwang91/nvim-bqf')
+
+  use {
+      'junegunn/fzf', run = function()
+          vim.fn['fzf#install']()
+      end
+  }
+
 end)

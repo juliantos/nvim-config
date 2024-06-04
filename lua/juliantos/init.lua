@@ -28,6 +28,7 @@ end
 
 
 if UPDATE then
+    print("Updating Neovim Config")
     local fetch_handle = io.popen('git fetch; git status')
     if fetch_handle ~= nil then
         local data = fetch_handle:read("*a")
@@ -42,9 +43,9 @@ if UPDATE then
         fetch_handle:close()
     end
 
-    local new_update_file = io.open(last_update_file, "w")
+    local new_update_file = io.open(last_update_file, "w+")
     if new_update_file ~= nil then
-        new_update_file:write(TIME)
+        new_update_file:write(os.time())
         new_update_file:close()
     end
 end
