@@ -13,13 +13,13 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
-	  config = function()
-		  vim.cmd('colorscheme rose-pine')
-	  end
-  })
+  --use({
+	  --'rose-pine/neovim',
+	  --as = 'rose-pine',
+	  --config = function()
+		  --vim.cmd('colorscheme rose-pine')
+	  --end
+  --})
 
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 
@@ -70,4 +70,19 @@ return require('packer').startup(function(use)
       end
   }
 
+  --use('mfussenegger/nvim-dap')
+
+  use('vim-airline/vim-airline')
+
+  use('vim-airline/vim-airline-themes')
+
+  use('neovim/nvim-lspconfig')
+
+  use('Civitasv/cmake-tools.nvim')
+
+  use('lambdalisue/vim-suda')
+
+  use('preservim/nerdtree')
+
+  use{'catppuccin/nvim', as = 'catppuccin'}
 end)
