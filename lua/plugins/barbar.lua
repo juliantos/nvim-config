@@ -11,7 +11,7 @@ return {
           local opts = {
               auto_hide = false,
 
-              hide = { extensions = true, inactive = true },
+              hide = { extensions = true, inactive = false },
 
               sidebar_filetypes = {
                   NvimTree = true,
